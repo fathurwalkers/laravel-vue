@@ -3,15 +3,20 @@
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <h2>Belajar Laravel & Vue Js</h2>
+                <nav>
+                    <router-link to="/home">Home</router-link>
+                    <router-link to="/about">About</router-link>
+                    <router-link to="/user/FathurWalkers">Users</router-link>
+                </nav>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {
-    mounted(){
-        console.log('export berhasil!');
-    }
-}
+// export default {
+//     mounted(){
+//         console.log('export berhasil!');
+//     }
+// }
 </script>

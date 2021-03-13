@@ -11,6 +11,7 @@
     <div id="app">
       <h1>@{{ message }}</h1>
       <test-component></test-component>
+      <router-view></router-view>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
   </body>
