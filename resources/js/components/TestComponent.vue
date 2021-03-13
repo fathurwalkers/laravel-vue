@@ -4,9 +4,9 @@
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <h2>Belajar Laravel & Vue Js</h2>
                 <nav>
-                    <router-link to="/home">Home</router-link>
-                    <router-link to="/about">About</router-link>
-                    <router-link to="/user/FathurWalkers">Users</router-link>
+                    <router-link v-bind:to="{name: 'Home'}">Home</router-link>
+                    <router-link v-bind:to="{name: 'About'}">About</router-link>
+                    <router-link v-bind:to="{name: 'User'}">Users</router-link>
                 </nav>
             </div>
         </div>

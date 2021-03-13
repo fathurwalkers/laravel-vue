@@ -1945,8 +1945,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['name']
+  props: ['name'],
+  data: function data() {
+    return {
+      users: [{
+        id: 1,
+        name: 'FathurWalkers'
+      }, {
+        id: 2,
+        name: 'Doremi'
+      }, {
+        id: 3,
+        name: 'Fasila Sido'
+      }]
+    };
+  }
 });
 
 /***/ }),
@@ -19881,11 +19900,15 @@ var render = function() {
         _c(
           "nav",
           [
-            _c("router-link", { attrs: { to: "/home" } }, [_vm._v("Home")]),
+            _c("router-link", { attrs: { to: { name: "Home" } } }, [
+              _vm._v("Home")
+            ]),
             _vm._v(" "),
-            _c("router-link", { attrs: { to: "/about" } }, [_vm._v("About")]),
+            _c("router-link", { attrs: { to: { name: "About" } } }, [
+              _vm._v("About")
+            ]),
             _vm._v(" "),
-            _c("router-link", { attrs: { to: "/user/FathurWalkers" } }, [
+            _c("router-link", { attrs: { to: { name: "User" } } }, [
               _vm._v("Users")
             ])
           ],
@@ -19998,7 +20021,25 @@ var render = function() {
       ? _c("section", [
           _vm._v("\n        Hello, " + _vm._s(_vm.name) + "\n    ")
         ])
-      : _c("section", [_c("h2", [_vm._v("User tidak di Temukan.")])])
+      : _c("section", [
+          _c("h2", [_vm._v("Daftar Users yang Tersedia")]),
+          _vm._v(" "),
+          _c(
+            "ul",
+            _vm._l(_vm.users, function(user) {
+              return _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/user/" + user.name } }, [
+                    _vm._v(_vm._s(user.name))
+                  ])
+                ],
+                1
+              )
+            }),
+            0
+          )
+        ])
   ])
 }
 var staticRenderFns = []
