@@ -1,11 +1,17 @@
 <template>
-    <h4>Hello, {{$route.params.name}}</h4>
+    <div>
+        <section v-if="name">
+            Hello, {{ name }}
+        </section>
+
+        <section v-else>
+            <h2>User tidak di Temukan.</h2>
+        </section>
+    </div>
 </template>
 
 <script>
-// export default {
-//     mounted(){
-//         console.log('export berhasil!');
-//     }
-// }
+    export default {
+        props: ['name'],
+    }
 </script>
