@@ -8,7 +8,7 @@
             <h2>Daftar Users yang Tersedia</h2>
             <ul>
                 <li v-for="user in users">
-                    <router-link :to="'/user/' + user.name">{{ user.name }}</router-link>
+                    <router-link :to="profile_uri(user.name)">{{ user.name }}</router-link>
                 </li>
             </ul>
         </section>
@@ -25,6 +25,11 @@
                     {id: 2, name: 'Doremi'},
                     {id: 3, name: 'Fasila Sido'},
                 ]
+            }
+        },
+        methods: {
+            profile_uri(name) {
+                return '/user/' + name
             }
         }
     }

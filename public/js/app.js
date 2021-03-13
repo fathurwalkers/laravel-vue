@@ -1965,6 +1965,11 @@ __webpack_require__.r(__webpack_exports__);
         name: 'Fasila Sido'
       }]
     };
+  },
+  methods: {
+    profile_uri: function profile_uri(name) {
+      return '/user/' + name;
+    }
   }
 });
 
@@ -20030,9 +20035,11 @@ var render = function() {
               return _c(
                 "li",
                 [
-                  _c("router-link", { attrs: { to: "/user/" + user.name } }, [
-                    _vm._v(_vm._s(user.name))
-                  ])
+                  _c(
+                    "router-link",
+                    { attrs: { to: _vm.profile_uri(user.name) } },
+                    [_vm._v(_vm._s(user.name))]
+                  )
                 ],
                 1
               )
