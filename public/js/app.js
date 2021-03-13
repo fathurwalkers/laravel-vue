@@ -2033,12 +2033,15 @@ var NotFound = __webpack_require__(/*! ./pages/NotFound.vue */ "./resources/js/p
 var RouteParameter = __webpack_require__(/*! ./pages/RouteParameter.vue */ "./resources/js/pages/RouteParameter.vue").default;
 
 var routes = [{
+  name: 'Home',
   path: '/home',
   component: Home
 }, {
+  name: 'About',
   path: '/about',
   component: About
 }, {
+  name: 'User',
   path: '/user/:name?',
   component: RouteParameter,
   props: true

@@ -10,14 +10,17 @@ const NotFound = require('./pages/NotFound.vue').default;
 const RouteParameter = require('./pages/RouteParameter.vue').default;
 
 const routes = [{
+        name: 'Home',
         path: '/home',
         component: Home
     },
     {
+        name: 'About',
         path: '/about',
         component: About
     },
     {
+        name: 'User',
         path: '/user/:name?',
         component: RouteParameter,
         props: true
