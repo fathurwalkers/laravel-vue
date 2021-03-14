@@ -10,6 +10,10 @@ class CreateDetailsTable extends Migration
     {
         Schema::create('detail', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->default('null');
+            $table->string('alamat')->default('null');
+            $table->string('jenis_kelamin')->default('null');
+            $table->string('pekerjaan')->default('null');
             $table->timestamps();
         });
     }

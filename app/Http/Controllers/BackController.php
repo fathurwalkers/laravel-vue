@@ -16,6 +16,10 @@ class BackController extends Controller
 {
     public function generate_data()
     {
-        return 'generate data';
+        $faker = Faker::create('id_ID');
+        
+        for ($i = 1; $i < 5; $i++) {
+            //
+        }
     }
 }
