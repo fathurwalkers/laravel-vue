@@ -11,17 +11,17 @@ const RouteParameter = require('./pages/RouteParameter.vue').default;
 
 const routes = [{
         name: 'Home',
-        path: '/home',
+        path: '/dashboard/home',
         component: Home
     },
     {
         name: 'About',
-        path: '/about',
+        path: '/dashboard/about',
         component: About
     },
     {
         name: 'User',
-        path: '/user/:name?',
+        path: '/dashboard/user/:name?',
         component: RouteParameter,
         props: true
     },

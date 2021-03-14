@@ -5,10 +5,10 @@ use App\Http\Controllers\BackController;
 
 Route::get('/', function () {
     return view('app');
-});
+})->name('home');
 
 Route::group(['prefix' => '/dashboard'], function () {
-    Route::get('{any}', function () {
+    Route::get('/{any}', function () {
         return view('app');
     })->where('any', '.*');
 });
