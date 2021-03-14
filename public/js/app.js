@@ -1954,21 +1954,20 @@ __webpack_require__.r(__webpack_exports__);
   props: ['name'],
   data: function data() {
     return {
-      users: [{
-        id: 1,
-        name: 'FathurWalkers'
-      }, {
-        id: 2,
-        name: 'Doremi'
-      }, {
-        id: 3,
-        name: 'Fasila Sido'
-      }]
+      users: []
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/api/users').then(function (response) {
+      console.log(response);
+      _this.users = response.data;
+    });
   },
   methods: {
     profile_uri: function profile_uri(name) {
-      return '/user/' + name;
+      return '/user/' + toString(name);
     }
   }
 });

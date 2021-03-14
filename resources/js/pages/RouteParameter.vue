@@ -20,16 +20,18 @@
         props: ['name'],
         data() {
             return {
-                users: [
-                    {id: 1, name: 'FathurWalkers'},
-                    {id: 2, name: 'Doremi'},
-                    {id: 3, name: 'Fasila Sido'},
-                ]
+                users: []
             }
+        },
+        mounted(){
+            axios.get('/api/users').then((response) => {
+                console.log(response)
+                this.users = response.data
+            })
         },
         methods: {
             profile_uri(name) {
-                return '/user/' + name
+                return '/user/' + toString(name)
             }
         }
     }
