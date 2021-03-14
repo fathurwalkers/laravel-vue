@@ -23,7 +23,7 @@ class BackController extends Controller
         }
     }
 
-    public function generate_user()
+    public function generate_produk()
     {
         $faker = Faker::create('id_ID');
         
