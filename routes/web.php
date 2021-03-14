@@ -13,4 +13,5 @@ Route::group(['prefix' => '/dashboard'], function () {
     })->where('any', '.*');
 });
 
-Route::get('/generate-data', [BackController::class, 'generate_data'])->name('generate-data');
+Route::get('/generate-user', [BackController::class, 'generate_user'])->name('generate-user');
+Route::get('/generate-produk', [BackController::class, 'generate_produk'])->name('generate-produk');

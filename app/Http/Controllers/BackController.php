@@ -14,7 +14,16 @@ use Illuminate\Support\Facades\Hash;
 
 class BackController extends Controller
 {
-    public function generate_data()
+    public function generate_user()
+    {
+        $faker = Faker::create('id_ID');
+        
+        for ($i = 1; $i < 5; $i++) {
+            //
+        }
+    }
+
+    public function generate_user()
     {
         $faker = Faker::create('id_ID');
         
