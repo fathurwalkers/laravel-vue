@@ -2146,9 +2146,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     profile_uri: function profile_uri(name) {
       return '/user/' + toString(name);
-    } // getProfil(){
-    // }
-
+    }
   }
 });
 
