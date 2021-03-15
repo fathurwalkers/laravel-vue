@@ -32,7 +32,9 @@
         methods: {
             profile_uri(name) {
                 return '/user/' + toString(name)
-            }
+            },
+            // getProfil(){
+            // }
         }
     }
 </script>

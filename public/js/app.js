@@ -2030,7 +2030,9 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     profile_uri: function profile_uri(name) {
       return '/user/' + toString(name);
-    }
+    } // getProfil(){
+    // }
+
   }
 });
 
@@ -20278,7 +20280,7 @@ var render = function() {
     { staticClass: "navbar navbar-expand-lg navbar-light bg-dark" },
     [
       _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-        _vm._v("Navbar")
+        _vm._v("Navigasi")
       ]),
       _vm._v(" "),
       _vm._m(0),
