@@ -16,8 +16,7 @@
       
       <header-component></header-component>
 
-      {{-- <main-component></main-component> --}}
-      <router-link></router-link>
+      <main-component></main-component>
 
       <footer-component></footer-component>
 

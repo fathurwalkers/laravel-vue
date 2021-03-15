@@ -20278,7 +20278,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "nav",
-    { staticClass: "navbar navbar-expand-lg navbar-light bg-primary" },
+    { staticClass: "navbar navbar-expand-lg navbar-light bg-dark" },
     [
       _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
         _vm._v("Navbar")
@@ -20377,7 +20377,7 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-sm-12 col-md-12 col-lg-12" },
+        { staticClass: "col-sm-12 col-md-12 col-lg-12 my-4" },
         [_c("router-view")],
         1
       )
