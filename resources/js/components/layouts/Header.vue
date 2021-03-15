@@ -1,23 +1,34 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#">Navigasi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <router-link v-bind:to="{name: 'Home'}">Home</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link v-bind:to="{name: 'About'}">About</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link v-bind:to="{name: 'User'}">Users</router-link>
-                </li>
-            </ul>
+<div>
+    <div class="navbar-bg"></div>
+    <navbar-component></navbar-component>
+    <div class="main-sidebar">
+      <aside id="sidebar-wrapper">
+        <div class="sidebar-brand">
+          <a href="index.html">Stisla</a>
         </div>
-    </nav>
+        <div class="sidebar-brand sidebar-brand-sm">
+          <a href="index.html">St</a>
+        </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+              <ul class="dropdown-menu">
+                    <router-link v-bind:to="{name: 'Home'}" class="nav-link">Home</router-link>
+                    <router-link v-bind:to="{name: 'About'}" class="nav-link">About</router-link>
+                    <router-link v-bind:to="{name: 'User'}" class="nav-link">Users</router-link>
+              </ul>
+            </li>
+          </ul>
+          <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+            <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split">
+              <i class="fas fa-rocket"></i> Back to Home
+            </a>
+          </div>
+        </aside>
+      </div>
+</div>
 </template>
 
 <script>
