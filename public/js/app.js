@@ -2140,7 +2140,6 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     axios.get('/api/users').then(function (response) {
-      console.log(response);
       _this.users = response.data;
     });
   },

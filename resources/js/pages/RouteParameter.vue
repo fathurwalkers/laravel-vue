@@ -25,7 +25,6 @@
         },
         mounted(){
             axios.get('/api/users').then((response) => {
-                console.log(response)
                 this.users = response.data
             })
         },
